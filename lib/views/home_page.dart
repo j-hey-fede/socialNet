@@ -1,3 +1,4 @@
+import 'package:desi/widgets/icon_container.dart';
 import "package:flutter/material.dart";
 
 import '../widgets/circle.dart';
@@ -20,6 +21,7 @@ class _HomePageState extends State<HomePage> {
         height: double.infinity,
         color: Colors.white70,
         child: Stack(
+          alignment: Alignment.center,
           children: <Widget>[
             Positioned(
               top: -(pinkSize) * 0.25,
@@ -36,6 +38,10 @@ class _HomePageState extends State<HomePage> {
                 colors: [Colors.amber, Colors.deepOrangeAccent],
                 size: amberSize,
               ),
+            ),
+            Positioned(
+              top: 180,
+              child: IconContainer(),
             ),
           ],
         ),
