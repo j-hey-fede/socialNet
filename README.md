@@ -23,7 +23,7 @@ samples, guidance on mobile development, and a full API reference.
 - REST API
 - Database:
   - Over time, I will connect this application to multiple different backend servers, builds and serverless options for comparison
-  - Please feel free to fork and contribute: 
+- Please feel free to fork and contribute: 
      - how you would go about data persistence for the app
      - additional UI elements
      - additional pages and features
