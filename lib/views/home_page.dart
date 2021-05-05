@@ -1,3 +1,4 @@
+import 'package:desi/utils/responsive.dart';
 import 'package:desi/widgets/icon_container.dart';
 import "package:flutter/material.dart";
 
@@ -11,9 +12,10 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
-    final double pinkSize = size.width * 0.85;
-    final double amberSize = size.width * 0.55;
+    final Responsive responsive = Responsive.of(context);
+
+    final double pinkSize = responsive.wp(85);
+    final double amberSize = responsive.wp(55);
 
     return Scaffold(
       body: Container(
@@ -41,8 +43,20 @@ class _HomePageState extends State<HomePage> {
             ),
             Positioned(
               top: pinkSize * 0.44,
-              child: IconContainer(
-                size: size.width * 0.25,
+              child: Column(
+                children: [
+                  IconContainer(
+                    size: responsive.wp(25),
+                  ),
+                  SizedBox(height: 30),
+                  Text(
+                    "welcome!\ncome inside",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: responsive.dp(2.44),
+                    ),
+                  ),
+                ],
               ),
             ),
           ],
