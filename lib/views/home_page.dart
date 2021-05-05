@@ -23,49 +23,51 @@ class _HomePageState extends State<HomePage> {
         onTap: () {
           FocusScope.of(context).unfocus();
         },
-        child: Container(
-          width: double.infinity,
-          height: double.infinity,
-          color: Colors.white70,
-          child: Stack(
-            alignment: Alignment.center,
-            children: <Widget>[
-              Positioned(
-                top: -(pinkSize) * 0.25,
-                right: -(pinkSize) * 0.15,
-                child: Circle(
-                  colors: [Colors.pink, Colors.purple],
-                  size: pinkSize,
+        child: SingleChildScrollView(
+          child: Container(
+            width: double.infinity,
+            height: responsive.height,
+            color: Colors.white70,
+            child: Stack(
+              alignment: Alignment.center,
+              children: <Widget>[
+                Positioned(
+                  top: -(pinkSize) * 0.25,
+                  right: -(pinkSize) * 0.15,
+                  child: Circle(
+                    colors: [Colors.pink, Colors.purple],
+                    size: pinkSize,
+                  ),
                 ),
-              ),
-              Positioned(
-                top: -(amberSize) * 0.2,
-                left: -(amberSize) * 0.2,
-                child: Circle(
-                  colors: [Colors.amber, Colors.deepOrangeAccent],
-                  size: amberSize,
+                Positioned(
+                  top: -(amberSize) * 0.2,
+                  left: -(amberSize) * 0.2,
+                  child: Circle(
+                    colors: [Colors.amber, Colors.deepOrangeAccent],
+                    size: amberSize,
+                  ),
                 ),
-              ),
-              Positioned(
-                top: pinkSize * 0.44,
-                child: Column(
-                  children: [
-                    IconContainer(
-                      size: responsive.wp(25),
-                    ),
-                    SizedBox(height: 30),
-                    Text(
-                      "welcome!\ncome inside",
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: responsive.dp(2.44),
+                Positioned(
+                  top: pinkSize * 0.44,
+                  child: Column(
+                    children: [
+                      IconContainer(
+                        size: responsive.wp(25),
                       ),
-                    ),
-                  ],
+                      SizedBox(height: 30),
+                      Text(
+                        "welcome!\ncome inside",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: responsive.dp(2.44),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
-              ),
-              LoginForm(),
-            ],
+                LoginForm(),
+              ],
+            ),
           ),
         ),
       ),

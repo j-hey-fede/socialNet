@@ -4,11 +4,15 @@ class TXTField extends StatelessWidget {
   final String label;
   final TextInputType keyboardType;
   final bool obscure;
+  final bool borderEnabled;
+  final double fontsize;
   const TXTField(
       {Key? key,
       this.label = "",
       this.keyboardType = TextInputType.text,
-      this.obscure = false})
+      this.obscure = false,
+      this.borderEnabled = true,
+      this.fontsize = 16})
       : super(key: key);
 
   @override
@@ -16,7 +20,16 @@ class TXTField extends StatelessWidget {
     return TextFormField(
       keyboardType: keyboardType,
       obscureText: obscure,
+      style: TextStyle(
+        fontSize: fontsize,
+      ),
       decoration: InputDecoration(
+        enabledBorder: borderEnabled
+            ? UnderlineInputBorder(
+                borderSide: BorderSide(color: Colors.black12),
+              )
+            : InputBorder.none,
+        contentPadding: const EdgeInsets.symmetric(vertical: 5),
         labelText: label,
         labelStyle: TextStyle(
           color: Colors.black45,
