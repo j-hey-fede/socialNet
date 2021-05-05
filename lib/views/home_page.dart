@@ -10,6 +10,10 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
+    final double pinkSize = size.width * 0.85;
+    final double amberSize = size.width * 0.55;
+
     return Scaffold(
       body: Container(
         width: double.infinity,
@@ -18,19 +22,19 @@ class _HomePageState extends State<HomePage> {
         child: Stack(
           children: <Widget>[
             Positioned(
-              top: -120,
-              right: -100,
+              top: -(pinkSize) * 0.25,
+              right: -(pinkSize) * 0.15,
               child: Circle(
                 colors: [Colors.pink, Colors.purple],
-                size: 400,
+                size: pinkSize,
               ),
             ),
             Positioned(
-              top: -100,
-              left: -75,
+              top: -(amberSize) * 0.2,
+              left: -(amberSize) * 0.2,
               child: Circle(
                 colors: [Colors.amber, Colors.deepOrangeAccent],
-                size: 240,
+                size: amberSize,
               ),
             ),
           ],
