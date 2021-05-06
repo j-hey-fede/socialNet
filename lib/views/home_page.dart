@@ -35,7 +35,7 @@ class _HomePageState extends State<HomePage> {
                   top: -(pinkSize) * 0.25,
                   right: -(pinkSize) * 0.15,
                   child: Circle(
-                    colors: [Colors.pink, Colors.purple],
+                    colors: [Colors.red, Colors.redAccent.shade700],
                     size: pinkSize,
                   ),
                 ),
@@ -43,7 +43,7 @@ class _HomePageState extends State<HomePage> {
                   top: -(amberSize) * 0.2,
                   left: -(amberSize) * 0.2,
                   child: Circle(
-                    colors: [Colors.amber, Colors.deepOrangeAccent],
+                    colors: [Colors.deepOrange, Colors.amber],
                     size: amberSize,
                   ),
                 ),
@@ -52,11 +52,11 @@ class _HomePageState extends State<HomePage> {
                   child: Column(
                     children: [
                       IconContainer(
-                        size: responsive.wp(25),
+                        size: responsive.wp(42),
                       ),
                       SizedBox(height: 30),
                       Text(
-                        "welcome!\ncome inside",
+                        "wherever you are,\ntake a step inside",
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: responsive.dp(2.44),

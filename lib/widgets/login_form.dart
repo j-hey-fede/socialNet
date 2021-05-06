@@ -70,8 +70,8 @@ class _LoginFormState extends State<LoginForm> {
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize:
-                              responsive.dp(responsive.isTablet ? 1.22 : 1.52),
-                          color: Colors.purple[800],
+                              responsive.dp(responsive.isTablet ? 1.22 : 1.32),
+                          color: Colors.grey.shade700,
                         ),
                       ),
                       onPressed: () {}, // _submitForm;
@@ -93,7 +93,7 @@ class _LoginFormState extends State<LoginForm> {
                     ),
                   ),
                   onPressed: () {},
-                  color: Colors.pink,
+                  color: Colors.red.shade900,
                 ),
               ),
               SizedBox(height: responsive.dp(2)),
@@ -110,7 +110,7 @@ class _LoginFormState extends State<LoginForm> {
                     child: Text(
                       'Sign Up',
                       style: TextStyle(
-                        color: Colors.pink,
+                        color: Colors.red,
                         fontSize:
                             responsive.dp(responsive.isTablet ? 1.5 : 1.7),
                       ),

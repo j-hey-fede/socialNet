@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class IconContainer extends StatelessWidget {
   final double size;
@@ -11,7 +10,7 @@ class IconContainer extends StatelessWidget {
     return Container(
       width: size,
       height: size,
-      padding: EdgeInsets.all(size * 0.10),
+      padding: EdgeInsets.all(size * 0.08),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(size * 0.18),
@@ -27,10 +26,10 @@ class IconContainer extends StatelessWidget {
         ],
       ),
       child: Center(
-        child: SvgPicture.asset(
-          'assets/triangular.svg',
-          width: size * 0.8,
-          height: size * 0.8,
+        child: Image.asset(
+          'assets/aluptrans.png',
+          width: size * 0.9,
+          height: size * 0.9,
         ),
       ),
     );
