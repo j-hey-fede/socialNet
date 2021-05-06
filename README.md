@@ -45,10 +45,10 @@ The frontend design of this application is based on a FREE Udemy course by Darwi
 
 ![tablet](https://user-images.githubusercontent.com/83217372/117293944-0c27b180-ae40-11eb-9ec0-27dd6377af3d.png)
 
-### Android PIXEL 3a
+### Android PIXEL 3a:
 
 <img width="329" alt="android" src="https://user-images.githubusercontent.com/83217372/117293945-0d58de80-ae40-11eb-91c1-3eba7b6086e9.png">
 
-### iOS iPhone 12 pro max
+### iOS iPhone 12 pro max:
 <img width="354" alt="iphone" src="https://user-images.githubusercontent.com/83217372/117293951-0fbb3880-ae40-11eb-9a2b-6b68b258d588.png">
 
