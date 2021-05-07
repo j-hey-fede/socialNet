@@ -52,7 +52,7 @@ class _HomePageState extends State<HomePage> {
                   child: Column(
                     children: [
                       IconContainer(
-                        size: responsive.wp(42),
+                        size: responsive.wp(34),
                       ),
                       SizedBox(height: 30),
                       Text(
