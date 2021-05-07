@@ -39,7 +39,7 @@ The frontend design of this application is based on a FREE Udemy course by Darwi
 
 
 
-## Images of the login screen (if you follow the course - I have updated with dark theme and using different icons):
+## Images of the login screen (if you follow the course - I have updated with dark theme and using different icons and a slightly different auth setting):
 
 ### Android Tablet:
 
