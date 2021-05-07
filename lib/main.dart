@@ -1,4 +1,5 @@
-import 'package:desi/views/home_page.dart';
+import 'package:desi/views/login_page.dart';
+import 'package:desi/views/register_page.dart';
 import 'package:desi/views/user_home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -21,8 +22,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark().copyWith(
         accentColor: Colors.amber,
       ),
-      home: HomePage(),
+      home: LoginPage(),
       routes: {
+        RegisterPage.routeName: (ctx) => RegisterPage(),
         UserHomePage.routeName: (ctx) => UserHomePage(),
       },
     );

@@ -22,7 +22,7 @@ Widget brandName() {
         backgroundImage: AssetImage(
           'assets/aluptrans.png',
         ),
-        radius: 22,
+        radius: 24,
       ),
     ],
   );

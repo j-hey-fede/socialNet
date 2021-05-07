@@ -1,16 +1,16 @@
 import 'package:desi/utils/responsive.dart';
-import 'package:desi/views/register_page.dart';
+import 'package:desi/views/login_page.dart';
 import 'package:desi/widgets/auth_card.dart';
 import 'package:flutter/material.dart';
 
-// TODO: - Make AuthCard more flexible and incorportate login logic here
+// TODO: - Make AuthCard more flexible and incorporate signup logic here;
 
-class LoginForm extends StatefulWidget {
+class RegisterForm extends StatefulWidget {
   @override
-  _LoginFormState createState() => _LoginFormState();
+  _RegisterFormState createState() => _RegisterFormState();
 }
 
-class _LoginFormState extends State<LoginForm> {
+class _RegisterFormState extends State<RegisterForm> {
   @override
   Widget build(BuildContext context) {
     final Responsive responsive = Responsive.of(context);
@@ -28,14 +28,14 @@ class _LoginFormState extends State<LoginForm> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Text(
-                  'New to this space?',
+                  'Have an account?',
                   style: TextStyle(
                     fontSize: responsive.dp(responsive.isTablet ? 1.33 : 2),
                   ),
                 ),
                 TextButton(
                   child: Text(
-                    'Sign Up',
+                    'Sign In',
                     style: TextStyle(
                       color: Colors.amber,
                       fontSize: responsive.dp(responsive.isTablet ? 1.5 : 1.7),
@@ -43,21 +43,10 @@ class _LoginFormState extends State<LoginForm> {
                   ),
                   onPressed: () {
                     Navigator.of(context)
-                        .pushReplacementNamed(RegisterPage.routeName);
+                        .pushReplacementNamed(LoginPage.routeName);
                   },
                 )
               ],
-            ),
-            TextButton(
-              child: Text(
-                'Forgot Password',
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: responsive.dp(responsive.isTablet ? 1.22 : 1.32),
-                  color: Colors.white,
-                ),
-              ),
-              onPressed: () {}, // _submitForm;
             ),
           ],
         ),
