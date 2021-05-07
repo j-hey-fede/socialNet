@@ -27,7 +27,7 @@ class _HomePageState extends State<HomePage> {
           child: Container(
             width: double.infinity,
             height: responsive.height,
-            color: Colors.white70,
+            color: Colors.white30,
             child: Stack(
               alignment: Alignment.center,
               children: <Widget>[

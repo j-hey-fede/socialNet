@@ -1,4 +1,6 @@
 //import 'package:desi/utils/exception.dart';
+import 'package:desi/views/user_home.dart';
+
 import '../utils/responsive.dart';
 import 'package:flutter/material.dart';
 
@@ -44,6 +46,7 @@ class _AuthCardState extends State<AuthCard> {
       _isLoading = true;
     });
     try {
+      Navigator.of(context).pushNamed(UserHomePage.routeName);
       print("handling valid form");
       //   if (_authMode == AuthMode.Login) {
       //     await Provider.of<Auth>(context, listen: false)
