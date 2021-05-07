@@ -20,7 +20,7 @@ class _LoginFormState extends State<LoginForm> {
         child: Column(
           children: <Widget>[
             AuthCard(),
-            SizedBox(height: responsive.dp(0.5)),
+            SizedBox(height: responsive.dp(responsive.isTablet ? 4 : 0.5)),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[

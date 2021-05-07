@@ -87,8 +87,9 @@ class _AuthCardState extends State<AuthCard> {
       ),
       elevation: 8.0,
       child: Container(
-        height: responsive.dp(31),
-        constraints: BoxConstraints(minHeight: responsive.dp(30)),
+        height: responsive.hp(responsive.isTablet ? 25 : 31),
+        constraints: BoxConstraints(
+            minHeight: responsive.dp(responsive.isTablet ? 20 : 30)),
         width: responsive.width * 0.88,
         padding: EdgeInsets.all(16.0),
         child: Form(
@@ -97,6 +98,9 @@ class _AuthCardState extends State<AuthCard> {
             child: Column(
               children: <Widget>[
                 TextFormField(
+                  style: TextStyle(
+                    fontSize: responsive.dp(responsive.isTablet ? 1.33 : 2),
+                  ),
                   decoration: InputDecoration(labelText: 'E-Mail'),
                   keyboardType: TextInputType.emailAddress,
                   validator: (value) {
@@ -110,6 +114,9 @@ class _AuthCardState extends State<AuthCard> {
                   },
                 ),
                 TextFormField(
+                  style: TextStyle(
+                    fontSize: responsive.dp(responsive.isTablet ? 1.33 : 2),
+                  ),
                   decoration: InputDecoration(labelText: 'Password'),
                   obscureText: true,
                   controller: _passwordController,
