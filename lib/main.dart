@@ -19,8 +19,9 @@ class MyApp extends StatelessWidget {
     ]);
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark().copyWith(
-        accentColor: Colors.amber,
+      theme: ThemeData(
+        primarySwatch: Colors.grey,
+        canvasColor: Colors.white70,
       ),
       home: LoginPage(),
       routes: {

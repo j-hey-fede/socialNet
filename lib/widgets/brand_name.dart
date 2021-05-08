@@ -9,20 +9,14 @@ Widget brandName() {
         mainAxisSize: MainAxisSize.min,
         children: [
           Text(
-            "Autism",
+            "Social",
             style: TextStyle(color: Colors.red, fontSize: 18),
           ),
           Text(
-            "LevelUP!",
-            style: TextStyle(color: Colors.amber, fontSize: 22),
+            "NET",
+            style: TextStyle(color: Colors.purple, fontSize: 22),
           ),
         ],
-      ),
-      CircleAvatar(
-        backgroundImage: AssetImage(
-          'assets/aluptrans.png',
-        ),
-        radius: 24,
       ),
     ],
   );

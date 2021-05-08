@@ -1,4 +1,5 @@
 import 'package:desi/utils/responsive.dart';
+import 'package:desi/widgets/icon_container.dart';
 import 'package:desi/widgets/register_form.dart';
 import "package:flutter/material.dart";
 
@@ -51,18 +52,21 @@ class _RegisterPageState extends State<RegisterPage> {
                   top: pinkSize * 0.44,
                   child: Column(
                     children: [
+                      IconContainer(
+                        size: responsive.wp(34),
+                      ),
+                      SizedBox(height: 30),
                       Text(
-                        "wherever you are,\ntake a step inside",
+                        "register and\ncome inside",
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: responsive.dp(2.44),
                         ),
                       ),
-                      SizedBox(height: responsive.dp(12)),
-                      RegisterForm(),
                     ],
                   ),
                 ),
+                RegisterForm(),
               ],
             ),
           ),

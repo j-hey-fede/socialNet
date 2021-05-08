@@ -37,7 +37,7 @@ class _RegisterFormState extends State<RegisterForm> {
                   child: Text(
                     'Sign In',
                     style: TextStyle(
-                      color: Colors.amber,
+                      color: Colors.red,
                       fontSize: responsive.dp(responsive.isTablet ? 1.5 : 1.7),
                     ),
                   ),
@@ -45,7 +45,8 @@ class _RegisterFormState extends State<RegisterForm> {
                     Navigator.of(context)
                         .pushReplacementNamed(LoginPage.routeName);
                   },
-                )
+                ),
+                SizedBox(height: responsive.hp(10)),
               ],
             ),
           ],

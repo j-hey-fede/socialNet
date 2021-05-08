@@ -134,9 +134,12 @@ class _AuthCardState extends State<AuthCard> {
                 SizedBox(
                   width: responsive.width * 0.88,
                   height: responsive.hp(responsive.isTablet ? 5 : 7.5),
-                  child: MaterialButton(
+                  child: FlatButton(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(18.0),
+                    ),
                     child: Text(
-                      'SIGN IN',
+                      "LET\'S GO!",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: responsive.dp(responsive.isTablet ? 1.33 : 2),

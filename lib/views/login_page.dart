@@ -57,7 +57,7 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                       SizedBox(height: 30),
                       Text(
-                        "wherever you are,\ntake a step inside",
+                        "wherever you are,\nyou can login here",
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: responsive.dp(2.44),
